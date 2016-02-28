@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html $if(lang)$ lang="$lang$" $endif$ dir="ltr">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Documentation layout example - UIkit documentation</title>
+        <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+        <link rel="apple-touch-icon-precomposed" href="images/apple-touch-icon.png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.25.0/css/uikit.gradient.css">
+        <link rel="stylesheet" href="/templates/pandoc-uikit/style.css">
+        <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+        <script src="/templates/pandoc-uikit/uikit.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.25.0/js/components/sticky.min.js"></script>
+
+        <script src="/templates/pandoc-uikit/scripts.js"></script>
+        
+        
+    </head>
+
+    <body>
+
+        
+        <div class="uk-container uk-container-center uk-margin-top uk-margin-large-bottom">
+            
+            <nav class="uk-navbar uk-margin-large-bottom">
+                <a class="uk-navbar-brand uk-hidden-small" href="layouts_frontpage.html">Brand</a>
+                <ul class="uk-navbar-nav uk-hidden-small">
+                    <li>
+                        <a href="layouts_frontpage.html">Frontpage</a>
+                    </li>
+                    <li>
+                        <a href="layouts_portfolio.html">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="layouts_blog.html">Blog</a>
+                    </li>
+                    <li class="uk-active">
+                        <a href="layouts_documentation.html">Documentation</a>
+                    </li>
+                    <li>
+                        <a href="layouts_contact.html">Contact</a>
+                    </li>
+                    <li>
+                        <a href="layouts_login.html">Login</a>
+                    </li>
+                </ul>
+                <a href="#offcanvas" class="uk-navbar-toggle uk-visible-small" data-uk-offcanvas></a>
+                <div class="uk-navbar-brand uk-navbar-center uk-visible-small">Brand</div>
+            </nav>
+            
+            <div class="uk-grid" data-uk-grid-margin>
+                <div class="uk-width-1-1">
+                    <h1 class="uk-heading-large">Documentation</h1>
+                    <p class="uk-text-large">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.</p>
+                </div>
+            </div>
+            
+
+            <div class="uk-grid" data-uk-grid-margin >          
+                <div class="uk-width-medium-1-4  ">
+
+
+    <div class="uk-overflow-container" data-uk-sticky="{top:25,media: 720}">
+                    <div class="uk-panel uk-panel-box menu-begin" >
+
+    $if(toc)$
+    $toc$
+    $endif$
+
+<!--
+    <ul>
+        <li><a href="#test-cache">Test cache</a>
+            <ul>
+                <li><a href="#ingen-titel">Ingen titel</a></li>
+            </ul>
+        </li>
+        <li><a href="#ingen-titel-1">Ingen titel</a></li>
+        <li><a href="#figur-liste">Figur-liste</a></li>
+    </ul>
+-->
+    
+   
+           <!--      
+             
+    <ul>
+        <li><a href="#">Første link</a>
+            <ul>
+                <li><a href="#test">Test</a></li>
+            </ul>
+        </li>
+        <li><a href="#test">Andet link</a>
+            <ul>
+                <li><a href="#test">Test</a>
+
+                </li>
+                <li><a href="#test">Test</a>
+
+                </li>
+                <li><a href="#test">Test</a>
+
+                </li>
+            </ul>
+        </li>
+        <li><a href="#">3. link</a></li>
+
+    </ul>-->
+                     
+     <!--
+                        
+                        <ul class="uk-nav uk-nav-side" >
+                            <li class="uk-nav-header">For Beginners</li>
+                            <li class="uk-active"><a href="#getstarted">Get Started</a></li>
+                            <li class=""><a href="#templatesettings">Template Settings</a></li>
+                            <li class=""><a href="#customizer">Customizer</a></li>
+                            <li class="uk-nav-header">For Developers</li>
+                            <li class=""><a href="#customization">Customizaton</a></li>
+                            <li class=""><a href="#troubleshooting">Troubleshooting</a></li>
+                            <li class="uk-nav-divider"></li>
+                            <li class=""><a href="#faq"><i class="uk-icon-info-circle uk-margin-small-right"></i>FAQ</a></li>
+                        </ul>-->
+                    </div>
+    </div>
+
+                </div>
+
+                
+                
+                <div class="uk-width-medium-3-4">
+                    $body$
+                </div>
+        </div>
+
+        <div id="offcanvas" class="uk-offcanvas">
+            <div class="uk-offcanvas-bar">
+                <ul class="uk-nav uk-nav-offcanvas">
+                    <li>
+                        <a href="layouts_frontpage.html">Frontpage</a>
+                    </li>
+                    <li>
+                        <a href="layouts_portfolio.html">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="layouts_blog.html">Blog</a>
+                    </li>
+                    <li class="uk-active">
+                        <a href="layouts_documentation.html">Documentation</a>
+                    </li>
+                    <li>
+                        <a href="layouts_contact.html">Contact</a>
+                    </li>
+                    <li>
+                        <a href="layouts_login.html">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </body>
+</html>
