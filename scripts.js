@@ -1,10 +1,10 @@
 $(document).ready(function () {
-    
-    $(".menu-begin ul:first-child").addClass('uk-nav uk-nav-parent-icon');
+    /*  uk-nav-parent-icon */
+    $(".menu-begin ul:first-child").addClass('uk-nav uk-nav-side');
     $(".menu-begin ul:first-child").data('uk-nav', '{multiple:false}');
     $(".menu-begin ul:first-child").attr('data-uk-nav', '{multiple:false}');
-    $(".menu-begin ul > li").addClass('uk-parent');
-    $(".menu-begin ul li > ul").addClass('uk-nav-sub');
+    $("ul.uk-nav > li").addClass('uk-parent');
+    $(".menu-begin ul > li > ul").addClass('uk-nav-sub');
     
     /*
     
@@ -21,17 +21,32 @@ $(document).ready(function () {
         //$(this).addClass('uk-open');
         //$(this).attr("aria-expanded","true");
     });
-    //$("a[href*='#']").on('click', function(event) {
-        //event.preventDefault();
-        // $("a[href*='#']").removeClass('uk-active');
-        // $(this).parent().addClass('uk-open');
+    
+    /*
+    $("a[href*='#']").on('click', function(event) {
+        event.preventDefault();
+        $("a[href*='#']").parent().removeClass('uk-active');
+        $(this).parent().toggleClass('uk-active');
         
-        //var hash = $(this).attr('href').split('#')[1];
+        var hash = $(this).attr('href').split('#')[1];
         
         //console.log(hash);
-        //scrollTo(hash);
-        // $('a[href="' + hash + '"]').addClass('uk-active');
-    // });
+        scrollTo(hash);
+        $('a[href="' + hash + '"]').addClass('uk-active');
+    }); */
+    
+    $(".uk-parent > a").on('click', function(event) {
+        event.preventDefault();
+        console.log('click');
+        $(".uk-parent > a").parent().removeClass('uk-active');
+        $(this).parent().toggleClass('uk-active');
+        
+        var hash = $(this).attr('href').split('#')[1];
+        
+        //console.log(hash);
+        scrollTo(hash);
+        $('a[href="' + hash + '"]').addClass('uk-active');
+    });
     //*
 
     function scrollTo(hash) {
