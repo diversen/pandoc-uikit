@@ -1,8 +1,8 @@
 $(document).ready(function () {
     /*  uk-nav-parent-icon */
     $(".menu-begin ul:first-child").addClass('uk-nav uk-nav-side');
-    $(".menu-begin ul:first-child").data('uk-nav', '{multiple:false}');
-    $(".menu-begin ul:first-child").attr('data-uk-nav', '{multiple:false}');
+    $(".menu-begin ul:first-child").data('uk-nav', '{multiple:true}');
+    $(".menu-begin ul:first-child").attr('data-uk-nav', '{multiple:true}');
     $("ul.uk-nav > li").addClass('uk-parent');
     $(".menu-begin ul > li > ul").addClass('uk-nav-sub');
     
