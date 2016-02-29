@@ -2865,7 +2865,7 @@
 (function(UI) {
 
     "use strict";
-
+    // navigation
     UI.component('nav', {
 
         defaults: {
