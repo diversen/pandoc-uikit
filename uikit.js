@@ -2916,7 +2916,7 @@
         },
 
         open: function(li, noanimation) {
-
+            noanimation = true;
             var $this = this, element = this.element, $li = UI.$(li), $container = $li.data('list-container');
 
             if (!this.options.multiple) {

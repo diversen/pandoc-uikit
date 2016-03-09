@@ -13,8 +13,10 @@
         <link href="https://vjs.zencdn.net/5.4.4/video-js.css" rel="stylesheet" />
         <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
         <script src="/templates/pandoc-uikit/uikit.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.25.0/js/components/sticky.min.js"></script>
+        <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.25.0/js/components/sticky.min.js"></script>
+        -->
         <script src="/templates/pandoc-uikit/scripts.js"></script>
+        <script src="/bower_components/sticky-kit/jquery.sticky-kit.js "></script>
 
         <meta name="generator" content="pandoc" />
         $for(author-meta)$
@@ -64,7 +66,7 @@
             $endif$
 
             <div class="uk-grid" data-uk-grid-margin >          
-                <div class="uk-width-medium-1-4  ">
+                <div class="uk-width-medium-1-4">
                     <div class="uk-overflow-container" data-uk-sticky="{top:25,media: 768}">
                         <div class="uk-panel uk-panel-box menu-begin" >
 

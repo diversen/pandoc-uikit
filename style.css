@@ -35,3 +35,10 @@ table {
 }
 
 
+.uk-overflow-container  {
+    overflow-y: scroll;
+    top: 0;
+    bottom: 0;
+}
+
+
