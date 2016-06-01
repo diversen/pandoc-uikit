@@ -69,6 +69,24 @@ function setStickyMenu () {
     }
 };
 
+$(document).ready(function(){
+    
+            $(".pager").wrapInner( '<ul class="uk-pagination-left uk-pagination"></ul>' );        
+            $(".pager a").wrap( '<li></li>' );
+            $(".pager b").wrap( '<li class="uk-active"></li>' );
+            $(".pager b").wrapInner( '<span></span>' );
+            $(".pager b span").unwrap( );
+
+            // Normalize tables without style
+            $( "table" ).addClass( "uk-table" );
+
+            // Normalize tables without style
+            $( "form" ).addClass( "uk-form" );
+        
+        
+  
+});
+
 $(document).ready(function () {
     setStickyMenu();
     $(window).on('resize', function () {
