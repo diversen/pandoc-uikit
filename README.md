@@ -1,4 +1,6 @@
-# pandoc bootstrap adaptive template
+# pandoc uikit
+
+A pandoc uikit html template. 
 
 Includes a sticky adaptive menu and some other nice things:
 
