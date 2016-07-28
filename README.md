@@ -10,7 +10,7 @@ Install:
 
 Example (fetch latest pandoc README and transform to HTML)
 
-    pandoc https://raw.githubusercontent.com/jgm/pandoc/master/README -o index.html -f markdown --template standalone.html --css template.css --toc --toc-depth=2
+    pandoc https://github.com/jgm/pandoc/blob/master/MANUAL.txt -o index.html -f markdown --template standalone.html --css template.css --toc --toc-depth=2
 
 Start a server in current directory, e.g.: 
 
