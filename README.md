@@ -32,4 +32,4 @@ google analytics:
 
 uikit CSS
 
-    --variable=template_css:/path/to/uikit.css ";
+    --variable=template_css:/path/to/uikit.css
