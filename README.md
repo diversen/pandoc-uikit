@@ -33,3 +33,7 @@ google analytics:
 uikit CSS
 
     --variable=template_css:/path/to/uikit.css
+    
+# Licence
+
+MIT © [Dennis Iversen](https://github.com/diversen)
